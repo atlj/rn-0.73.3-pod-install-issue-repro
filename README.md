@@ -1,31 +1,16 @@
-# react-native-pods-test
+## What's the issue?
 
-test
+`pod install --project-directory=example/ios`
 
-## Installation
+fails with:
 
-```sh
-npm install react-native-pods-test
 ```
+[!] Invalid `Podfile` file: undefined method `[]' for nil:NilClass.
 
-## Usage
-
-```js
-import { multiply } from 'react-native-pods-test';
-
-// ...
-
-const result = await multiply(3, 7);
+ #  from /Users/burakguner/kod/pods-test/example/ios/Podfile:29
+ #  -------------------------------------------
+ #  target 'PodsTestExample' do
+ >    config = use_native_modules!
+ #
+ #  -------------------------------------------
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
